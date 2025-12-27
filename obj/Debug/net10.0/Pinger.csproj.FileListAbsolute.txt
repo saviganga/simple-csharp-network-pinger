@@ -1,0 +1,14 @@
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/bin/Debug/net10.0/Pinger
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/bin/Debug/net10.0/Pinger.deps.json
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/bin/Debug/net10.0/Pinger.runtimeconfig.json
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/bin/Debug/net10.0/Pinger.dll
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/bin/Debug/net10.0/Pinger.pdb
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.GeneratedMSBuildEditorConfig.editorconfig
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.AssemblyInfoInputs.cache
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.AssemblyInfo.cs
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.csproj.CoreCompileInputs.cache
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.dll
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/refint/Pinger.dll
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.pdb
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/Pinger.genruntimeconfig.cache
+/Users/saviganga/Documents/working-boy/c#/pinger/Pinger/obj/Debug/net10.0/ref/Pinger.dll
