@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 
 // define the ip addresses/hostnames
-string[] addresses = {"www.google.com"};
+string[] addresses = {"www.mytruq.com"};
 Console.WriteLine($"\n\n addresses: {String.Join(", ", addresses)}\n\n");
 
 string address = addresses[0];
@@ -47,5 +47,23 @@ int pingTimeout = 120;
 // send request and get pinger response
 PingReply pingResponse = pinger.Send(address: ipv4Address, timeout: pingTimeout, buffer: buffer, options: pingOptions);
 
+// using tenary operation
+string message = (pingResponse.Status.ToString()).ToLowerInvariant() == "success"
+    ? $"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n"
+    : "\n\nno connection\n\n";
+
+Console.WriteLine(message);
+
+// // using if/else
+// if ( (pingResponse.Status.ToString()).ToLowerInvariant() == "success" ) {
+//     Console.WriteLine($"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n");
+// }
+// else
+// {
+//     Console.WriteLine("\n\nno connection\n\n");
+// }
+
+
+
 // return response
-Console.WriteLine($"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n");
+// Console.WriteLine($"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n");

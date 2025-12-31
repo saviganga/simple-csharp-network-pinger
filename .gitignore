@@ -1,0 +1,84 @@
+# =========================
+# Build results
+# =========================
+bin/
+obj/
+out/
+
+# =========================
+# .NET user-specific files
+# =========================
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+.vscode/
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Test results
+# =========================
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# =========================
+# NuGet
+# =========================
+packages/
+.nuget/
+.nuget/packages/
+
+# =========================
+# Publish output
+# =========================
+publish/
+*.publishproj
+
+# =========================
+# Secrets / Env
+# =========================
+appsettings.Development.json
+appsettings.Production.json
+.env
+.env.*
+
+# =========================
+# Rider cache
+# =========================
+_ReSharper*/
+*.DotSettings.user
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Others
+# =========================
+*.pid
+*.cache
