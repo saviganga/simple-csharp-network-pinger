@@ -48,11 +48,26 @@ int pingTimeout = 120;
 PingReply pingResponse = pinger.Send(address: ipv4Address, timeout: pingTimeout, buffer: buffer, options: pingOptions);
 
 // using tenary operation
-string message = (pingResponse.Status.ToString()).ToLowerInvariant() == "success"
-    ? $"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n"
-    : "\n\nno connection\n\n";
+// string message = (pingResponse.Status.ToString()).ToLowerInvariant() == "success"
+//     ? $"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n"
+//     : "\n\nno connection\n\n";
+//
+// Console.WriteLine(message);
 
-Console.WriteLine(message);
+// using switch/case
+switch ((pingResponse.Status.ToString()).ToLowerInvariant())
+{
+    case "success":
+        Console.WriteLine(
+            $"\n\n ipv4Adress: {pingResponse.Address.MapToIPv4()}\n\n status: {pingResponse.Status.ToString()}\n\n");
+            break;
+    case "failed":
+        Console.WriteLine("\n\n no connection \n\n");
+        break;
+    default:
+        Console.WriteLine("\n\n over fail dey worry this guy");
+        break;
+}
 
 // // using if/else
 // if ( (pingResponse.Status.ToString()).ToLowerInvariant() == "success" ) {
