@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 
 // define the ip addresses/hostnames
-string[] addresses = {"www.mytruq.com"};
+string[] addresses = {"www.google.com"};
 Console.WriteLine($"\n\n addresses: {String.Join(", ", addresses)}\n\n");
 
 string address = addresses[0];
